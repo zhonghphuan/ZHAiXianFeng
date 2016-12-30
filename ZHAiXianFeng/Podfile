@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ZHAiXianFeng' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ZHAiXianFeng
+pod 'AFNetworking'
+pod 'SnapKit'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'FMDB'
+pod 'SDCycleScrollView'
+pod 'YYModel'
+pod 'MJRefresh'
+pod 'SKTagView'
+pod 'UITableView+FDTemplateLayoutCell'
+end

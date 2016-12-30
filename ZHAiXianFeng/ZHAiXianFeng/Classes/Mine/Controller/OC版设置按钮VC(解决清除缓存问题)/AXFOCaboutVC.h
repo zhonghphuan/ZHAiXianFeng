@@ -1,0 +1,13 @@
+//
+//  AXFOCaboutVC.h
+//  SpuerYangAngWang
+//
+//  Created by 王嘉涛 on 2016/12/27.
+//  Copyright © 2016年 杨茂盛. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AXFOCaboutVC : UIViewController
+
+@end
