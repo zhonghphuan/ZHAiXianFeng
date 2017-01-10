@@ -25,7 +25,7 @@ class ZHDetailShoppingCar: UIView {
             smallView.numLabel.isHidden = false
             cyView.isHidden = (detailModel?.count == 0 || ZHShoppingCar.shared.shopCarModelArray.count == 0)
 
-            numlbl.text = "\(detailModel!.count!)"
+            numlbl.text = detailModel?.count?.description ?? "0"
         }
     }
     //懒加载添加删除的小视图

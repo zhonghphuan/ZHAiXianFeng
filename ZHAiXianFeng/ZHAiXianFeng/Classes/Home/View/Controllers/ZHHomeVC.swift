@@ -373,15 +373,14 @@ extension ZHHomeVC : UICollectionViewDelegateFlowLayout,UICollectionViewDelegate
         }else{
             
             let vc = ZHDetailVC()
-            
             vc.detailModel = viewModel.arraySellFast[indexPath.row]
+            
             for item in ZHShoppingCar.shared.shopCarModelArray {
                 if item.product_id == viewModel.arraySellFast[indexPath.row].product_id {
                     vc.detailModel = item
                 }
             }
             
-           
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
