@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZHRedHotView" customModule="ZHAiXianFeng" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahg-NF-71r">
+                    <rect key="frame" x="8" y="4" width="5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ahg-NF-71r" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Cbf-p8-Xax"/>
+                <constraint firstItem="Ahg-NF-71r" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="geT-U3-cQB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="countLabel" destination="i0l-2d-2wg" id="IPH-U3-BJM"/>
+                <outlet property="cyView" destination="MpG-hn-Xvf" id="6Ji-Y0-w89"/>
+            </connections>
+            <point key="canvasLocation" x="-42.5" y="103.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="gmG-z5-1hS" customClass="ZHRedHotView" customModule="ZHAiXianFeng" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="shopCart" translatesAutoresizingMaskIntoConstraints="NO" id="9BO-AA-SW0">
+                    <rect key="frame" x="31" y="2" width="25" height="25"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpG-hn-Xvf">
+                    <rect key="frame" x="56" y="-2" width="16" height="16"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0l-2d-2wg">
+                            <rect key="frame" x="5" y="2" width="5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.10258613905456671" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="3AO-qR-rql"/>
+                        <constraint firstAttribute="height" constant="16" id="Ifn-Qd-IqE"/>
+                        <constraint firstItem="i0l-2d-2wg" firstAttribute="centerY" secondItem="MpG-hn-Xvf" secondAttribute="centerY" id="pc9-Bl-izD"/>
+                        <constraint firstItem="i0l-2d-2wg" firstAttribute="centerX" secondItem="MpG-hn-Xvf" secondAttribute="centerX" id="vUz-1F-jmD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物车" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55s-3L-Skk">
+                    <rect key="frame" x="31" y="31" width="31" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="55s-3L-Skk" firstAttribute="top" secondItem="MpG-hn-Xvf" secondAttribute="bottom" constant="17" id="7rZ-6Z-p2C"/>
+                <constraint firstItem="MpG-hn-Xvf" firstAttribute="top" secondItem="9BO-AA-SW0" secondAttribute="top" constant="-4" id="Rov-uy-Olw"/>
+                <constraint firstItem="9BO-AA-SW0" firstAttribute="centerX" secondItem="gmG-z5-1hS" secondAttribute="centerX" id="ePO-8w-vjp"/>
+                <constraint firstItem="55s-3L-Skk" firstAttribute="centerX" secondItem="gmG-z5-1hS" secondAttribute="centerX" constant="3" id="h04-jM-AID"/>
+                <constraint firstItem="MpG-hn-Xvf" firstAttribute="leading" secondItem="9BO-AA-SW0" secondAttribute="leading" constant="25" id="v7X-Pr-UbT"/>
+                <constraint firstItem="9BO-AA-SW0" firstAttribute="centerY" secondItem="gmG-z5-1hS" secondAttribute="centerY" constant="-8" id="xa7-eg-Ee4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="129" y="406.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shopCart" width="25" height="25"/>
+    </resources>
+</document>

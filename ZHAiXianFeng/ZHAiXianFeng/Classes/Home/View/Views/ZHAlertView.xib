@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZHAlertView" customModule="ZHAiXianFeng" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_orderSuccess" translatesAutoresizingMaskIntoConstraints="NO" id="o3y-ih-oVq">
+                    <rect key="frame" x="62.5" y="8" width="85" height="85"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苹果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Xhe-1L-v4m">
+                    <rect key="frame" x="90.5" y="101" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有库存了,过段时间再看看!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeJ-9I-zgJ">
+                    <rect key="frame" x="15" y="126" width="180" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aeJ-9I-zgJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7pk-4v-dyf"/>
+                <constraint firstItem="aeJ-9I-zgJ" firstAttribute="top" secondItem="Xhe-1L-v4m" secondAttribute="bottom" constant="8" id="85I-14-Lqc"/>
+                <constraint firstItem="Xhe-1L-v4m" firstAttribute="top" secondItem="o3y-ih-oVq" secondAttribute="bottom" constant="8" id="9Qi-oP-TQV"/>
+                <constraint firstItem="o3y-ih-oVq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IlR-Qc-rWX"/>
+                <constraint firstItem="Xhe-1L-v4m" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ic6-w6-qOK"/>
+                <constraint firstItem="o3y-ih-oVq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="qAx-6c-ccE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="nameLabel" destination="Xhe-1L-v4m" id="Byu-vN-5yK"/>
+            </connections>
+            <point key="canvasLocation" x="-23" y="-205"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="v2_orderSuccess" width="85" height="85"/>
+    </resources>
+</document>
